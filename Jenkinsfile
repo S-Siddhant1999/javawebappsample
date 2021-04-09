@@ -19,8 +19,8 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = 'QuickstartJenkins-rg'
-      def webAppName = 'newjenkinss-app-sid08'
+      def resourceGroup ='QuickstartJenkins-rg'
+      def webAppName ='newjenkinss-app-sid08'
       // login Azure
       withCredentials([usernamePassword(credentialsId:'AzureServicePrincipal', passwordVariable:'6U1fgG7r4zxaW4Z9WeYJ-k96Fo~k.rDgdd', usernameVariable:'97e82272-1e7c-4d44-95c3-43a162538b66')]) {
        sh '''
